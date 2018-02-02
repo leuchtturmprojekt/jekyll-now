@@ -1,18 +1,36 @@
----
-layout: default
----
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+      <title>Leuchtturmprojekt</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> 
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> <link rel="icon" href="img/favicon.ico" type="image/x-icon"> 
+   </head> 
+   <body> 
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div id="logo">
+                  <img class="img-fluid" src="img/logo.png">
+                  <h1 id="logo-title">leuchtturmprojekt<span class="org">.org</span></h1>
+               </div> 
+            </div>
+            <div class="col-md-8" id="description">
+               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+               <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
+               <div id="footer">
+                  <a href="http://jfbausch.de">Impressum</a>
+                  <a href="https://twitter.com/leuchtturmproje">Twitter</a>
+                  <a href="mailto:mail@leuchtturmprojekt.org">E-Mail</a>
+               </div>
+            </div>
+         </div>
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+   </body>
+</html>
